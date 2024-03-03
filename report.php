@@ -25,22 +25,22 @@ Tugas 2 Pemrograman Web -->
     $Date9=date_create('16-02-2023');
     $Date10=date_create('24-03-2023');
 
-    function Total($arr) {
+    function Total($Array) {
         $Total=0;
-        foreach ($arr as $num) {
-            $Total += $num;
+        foreach ($Array as $Numb) {
+            $Total += $Numb;
         }
         return $Total;
     }
 
     $PMSKArray = [1000000, 100000, 200000, 89000, 0, 165000, 330000, 100000, 100000, 24032023];
-    $Pemasukkan=array_map(function($num){
-        return number_format($num);
+    $Pemasukkan=array_map(function($Numb){
+        return number_format($Numb);
     },$PMSKArray);
 
     $PengeluaranArr = [0, 0, 0, 0, 21000, 0, 0, 0, 0, 0];
-    $Pengeluaran=array_map(function($num){
-        return number_format($num);
+    $Pengeluaran=array_map(function($Numb){
+        return number_format($Numb);
     }, $PengeluaranArr);
 
     $PemasukkanTotal = Total($PMSKArray);
@@ -63,28 +63,28 @@ Tugas 2 Pemrograman Web -->
             <th>PENGELUARAN</th>
 </strong></tr>
         <?php
-            $report = array(
-                array("Nomor" => 1, "Tgl" => $Date1, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"","Pemasukkan" => "Rp.".$Pemasukkan[0], "Pengeluaran" => "-"),
+            $Report = array(
+                array("Nomor" => 1, "Tgl" => $Date1, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"","Pemasukkan" => "Rp. ".$Pemasukkan[0], "Pengeluaran" => "-"),
                 
-                array("Nomor" => 2, "Tgl" => $Date2, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"gaada","Pemasukkan" => "Rp.".$Pemasukkan[1], "Pengeluaran" => "-"),
+                array("Nomor" => 2, "Tgl" => $Date2, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"gaada","Pemasukkan" => "Rp. ".$Pemasukkan[1], "Pengeluaran" => "-"),
                 
-                array("Nomor" => 3, "Tgl" => $Date3, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"","Pemasukkan" => "Rp.".$Pemasukkan[2], "Pengeluaran" => "-"),
+                array("Nomor" => 3, "Tgl" => $Date3, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"","Pemasukkan" => "Rp. ".$Pemasukkan[2], "Pengeluaran" => "-"),
                 
-                array("Nomor" => 4, "Tgl" => $Date4, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"test Pemasukkan 090323","Pemasukkan" => "Rp.".$Pemasukkan[3], "Pengeluaran" => "-"),
+                array("Nomor" => 4, "Tgl" => $Date4, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"test Pemasukkan 090323","Pemasukkan" => "Rp. ".$Pemasukkan[3], "Pengeluaran" => "-"),
                 
-                array("Nomor" => 5, "Tgl" => $Date5, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"test Pengeluaran 090323","Pemasukkan" => "-", "Pengeluaran" => "Rp.".$Pengeluaran[4]),
+                array("Nomor" => 5, "Tgl" => $Date5, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"test Pengeluaran 090323","Pemasukkan" => "-", "Pengeluaran" => "Rp. ".$Pengeluaran[4]),
                 
-                array("Nomor" => 6, "Tgl" => $Date6, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"lunas yak","Pemasukkan" => "Rp.".$Pemasukkan[5], "Pengeluaran" => "-"),
+                array("Nomor" => 6, "Tgl" => $Date6, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"lunas yak","Pemasukkan" => "Rp. ".$Pemasukkan[5], "Pengeluaran" => "-"),
                 
-                array("Nomor" => 7, "Tgl" => $Date7, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"lunas yak","Pemasukkan" => "Rp.".$Pemasukkan[6], "Pengeluaran" => "-"),
+                array("Nomor" => 7, "Tgl" => $Date7, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"lunas yak","Pemasukkan" => "Rp. ".$Pemasukkan[6], "Pengeluaran" => "-"),
                 
-                array("Nomor" => 8, "Tgl" => $Date8, "Kategori" => "Pinjaman Ulang", "keterangan" =>"tes","Pemasukkan" => "Rp.".$Pemasukkan[7], "Pengeluaran" => "-"),
+                array("Nomor" => 8, "Tgl" => $Date8, "Kategori" => "Pinjaman Ulang", "keterangan" =>"tes","Pemasukkan" => "Rp. ".$Pemasukkan[7], "Pengeluaran" => "-"),
                 
-                array("Nomor" => 9, "Tgl" => $Date9, "Kategori" => "Belanja Modal", "keterangan" =>"tes card tahun","Pemasukkan" => "Rp.".$Pemasukkan[8], "Pengeluaran" => "-"),
+                array("Nomor" => 9, "Tgl" => $Date9, "Kategori" => "Belanja Modal", "keterangan" =>"tes card tahun","Pemasukkan" => "Rp. ".$Pemasukkan[8], "Pengeluaran" => "-"),
                 
-                array("Nomor" => 10, "Tgl" => $Date10, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"","Pemasukkan" => "Rp.".$Pemasukkan[9], "Pengeluaran" => "-"),
+                array("Nomor" => 10, "Tgl" => $Date10, "Kategori" => "Pembayaran Pesanan", "keterangan" =>"","Pemasukkan" => "Rp. ".$Pemasukkan[9], "Pengeluaran" => "-"),
             );
-            foreach($report as $subArray)
+            foreach($Report as $subArray)
             {
         ?>
         <tr>
@@ -101,13 +101,13 @@ Tugas 2 Pemrograman Web -->
         <tr>
             <td style="border-right: none;" colspan="3"></td>
             <th style="text-align: right; border-right:none; border-left: none;">TOTAL</th>
-            <td style="text-align: center;">Rp. <?php echo number_format($PemasukkanTotal) ?>,-</td>
-            <td style="text-align: center;">Rp. <?php echo number_format($PengeluaranTotal) ?>,-</td>
+            <td style="text-align: center;">Rp.  <?php echo number_format($PemasukkanTotal) ?>,-</td>
+            <td style="text-align: center;">Rp.  <?php echo number_format($PengeluaranTotal) ?>,-</td>
         </tr>
         <tr>
             <td style="border-right: none;" colspan="3"></td>
             <th style="text-align: right; border-right:none; border-left: none;">SALDO</th>
-            <td style="text-align: center;" colspan="2">Rp. <?php echo number_format($Saldo) ?>,-</td>
+            <td style="text-align: center;" colspan="2">Rp.  <?php echo number_format($Saldo) ?>,-</td>
         </tr>
     </table>
 </div>  
