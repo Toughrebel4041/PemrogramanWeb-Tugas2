@@ -1,5 +1,5 @@
 <footer style="text-align: center;">
-    <h1 style="color: blue">INI FOOTER</h1>
+    <h4 style="background-color: blue; color: White">&copy; Sultan's Security 2024</h4>
 </footer>
 </body>
 </html>
