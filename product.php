@@ -29,7 +29,7 @@ $Total = (($SWPrc*$SWQty)+($SplunkPrc*$SplunkQty)+($SOPrc*$SOQty)+($TenablePrc*$
         </style>
 <h3>Our Product</h3>
 <h5>These are Security Platforms we provide:</h5>
-<table>
+<table style="margin-left: auto; margin-right:auto;">
     <tr>
         <th style="text-align: left;">No</th>
         <th style="text-align: left;">Product Name</th>
