@@ -43,6 +43,9 @@ Tugas 2 Pemrograman Web -->
                       <li class="nav-item">
                         <a class="nav-link" href="product.php">Our Product</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="report.php">Sales Report</a>
+                      </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Social Media
